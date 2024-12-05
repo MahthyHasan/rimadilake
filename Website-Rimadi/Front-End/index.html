@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Rimadi Lake - Guest INN</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&amp;family=Outfit:wght@300;400&amp;display=swap"
+    />
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+      <div id="preloader-status">
+        <div class="preloader-position loader"><span></span></div>
+      </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- Menu -->
+    <div class="rimadi-wrap">
+      <div class="rimadi-wrap-inner">
+        <nav class="rimadi-menu">
+          <ul>
+            <li class="rimadi-menu-sub">
+              <a class="active" href="#">Home <i class="ti-angle-down"></i></a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="rimadi-menu-sub">
+              <a href="#">Rooms<i class="ti-angle-down"></i></a>
+            </li>
+            <li class="rimadi-menu-sub">
+              <a href="#">Services <i class="ti-angle-down"></i></a>
+            </li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li class="rimadi-menu-sub">
+              <a href="#">Pages <i class="ti-angle-down"></i></a>
+              <ul>
+                <li><a href="amenities.html">Other PAges</a></li>
+                <li><a href="gallery-image.html">Image Gallery</a></li>
+                <li><a href="gallery-video.html">Video Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="faq.html">F.A.Qs</a></li>
+              </ul>
+            </li>
+            <li class="rimadi-menu-sub">
+              <a href="#">News<i class="ti-angle-down"></i></a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="rimadi-menu-footer">
+          <div class="reservation">
+            <a href="tel:0777794422">
+              <div
+                class="icon d-flex justify-content-center align-items-center"
+              >
+                <i class="flaticon-call"></i>
+              </div>
+              <div class="call">Reservation<br /><span>077-779-4422</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Logo & Menu Burger -->
+    <div class="rimadi-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Menu Burger -->
+          <div class="col-3 col-md-1 text-right rimadi-wrap-burger-wrap">
+            <a href="#" class="rimadi-nav-toggle rimadi-js-rimadi-nav-toggle"
+              ><i></i
+            ></a>
+          </div>
+          <!-- Logo -->
+          <div class="col-6 col-md-10 text-center rimadi-logo-wrap">
+            <a href="index.html" class="rimadi-logo"
+              ><img src="images/logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Kenburns Slider -->
+    <aside
+      class="kenburns-section"
+      id="kenburnsSliderContainer"
+      data-overlay-dark="5"
+    >
+      <div class="kenburns-inner h-100">
+        <div class="v-middle caption text-center">
+          <div class="container">
+            <div class="row justify-content-center h-100">
+              <div class="col-lg-8 col-md-12">
+                <h4>Warmly Welcome To</h4>
+                <h1>Rimadi Lake Guest INN</h1>
+                <div class="butn-light mt-30 mb-40">
+                  <a href="#"><span>Sign IN</span></a>
+                  <a style="margin-left: 1rem" href="#"
+                    ><span>Register Now</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Booking Search -->
+    <div class="booking-wrapper">
+      <div class="container">
+        <div class="booking-inner clearfix">
+          <form action="#" class="form1 clearfix">
+            <div class="col1 c1">
+              <div class="input1_wrapper border-l border-b border-t border-r">
+                <label>Check in</label>
+                <div class="input1_inner">
+                  <input
+                    type="text"
+                    class="form-control input datepicker"
+                    placeholder="Check in"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col1 c2">
+              <div class="input1_wrapper border-l border-b border-t border-r">
+                <label>Check out</label>
+                <div class="input1_inner">
+                  <input
+                    type="text"
+                    class="form-control input datepicker"
+                    placeholder="Check out"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col2 c3">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Adults</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col2 c4">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Children</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col2 c5">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Rooms</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col3 c6">
+              <button type="submit" class="btn-form1-submit">Check Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <section class="about section-padding bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="sub-title border-bot-light">Welcome to</div>
+          </div>
+          <div class="col-md-9">
+            <div class="section-title">Rimadi Lake Guest INN</div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  Nestled in Eravur Town near Batticaloa City on Sri Lanka's
+                  East Coast, Rimadi Lake Guest Inn offers a serene escape amid
+                  nature. It overlooks Eravur Lagoon and lies close to the
+                  tourist attraction Lagoon Park. With over ten rooms available,
+                  guests can choose between AC and non-AC accommodations.
+                </p>
+                <p>
+                  This tranquil inn in the heart of Eastern Province boasts a
+                  scenic location by Eravur Lagoon. Offering a variety of
+                  rooms—AC and non-AC—it's an ideal retreat. The proximity to
+                  Lagoon Park adds to its appeal for tourists seeking a peaceful
+                  stay.
+                </p>
+                <p>
+                  Rimadi Lake Guest Inn, set in Eravur Town, Sri Lanka, is a
+                  nature-surrounded haven. Featuring diverse room options—AC and
+                  non-AC—guests are ensured a comfortable stay. Ample car
+                  parking and delicious meals further enhance the delightful
+                  experience for visitors.
+                </p>
+                <!-- Rating -->
+                <div class="ratting-point mt-30 mb-30">
+                  <div class="features-ratting">
+                    <h3>4.9</h3>
+                  </div>
+                  <div class="features-caption">
+                    <h3>Rating based on 2500+ reviews</h3>
+                    <div class="rating">
+                      <span>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="row g-3">
+                  <div class="col-6 text-end">
+                    <img
+                      class="img-fluid rounded w-75 wow zoomIn"
+                      data-wow-delay="0.1s"
+                      src="images/uc2.png"
+                      style="margin-top: 25%"
+                    />
+                  </div>
+                  <div class="col-6 text-start">
+                    <img
+                      class="img-fluid rounded w-100 wow zoomIn"
+                      data-wow-delay="0.3s"
+                      src="images/uc2.png"
+                    />
+                  </div>
+                  <div class="col-6 text-end">
+                    <img
+                      class="img-fluid rounded w-50 wow zoomIn"
+                      data-wow-delay="0.5s"
+                      src="images/uc2.png"
+                    />
+                  </div>
+                  <div class="col-6 text-start">
+                    <img
+                      class="img-fluid rounded w-75 wow zoomIn"
+                      data-wow-delay="0.7s"
+                      src="images/uc2.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rooms -->
+    <section class="rooms1 section-padding">
+      <div class="container">
+        <div class="row mb-30">
+          <div class="col-md-3">
+            <div class="sub-title border-bot-light">Discover</div>
+          </div>
+          <div class="col-md-9">
+            <div class="section-title">Rooms</div>
+            <p>
+              The Rimadi Lake Guest INN offers a range of rooms catering to
+              various needs those are single rooms for solo travelers, double
+              rooms for pairs, master rooms for added comfort, and family rooms
+              accommodating larger groups, ensuring a comfortable stay for all.
+            </p>
+          </div>
+        </div>
+        <div class="rooms1-carousel owl-theme owl-carousel">
+          <div class="rooms1-single">
+            <div class="rooms1-img"><img src="images/uc3.png" alt="" /></div>
+            <div class="rooms1-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="rooms1-title"><a href="#">Single Room</a></div>
+                  <div class="rooms1-tagline">30 m<sup>2</sup> / 1 adult</div>
+                </div>
+                <div class="col-md-6">
+                  <div class="book">
+                    <div>
+                      <a href="room-details.html" class="butn-dark2"
+                        ><span>Book</span></a
+                      >
+                    </div>
+                    <div>
+                      <span>from</span><span class="price">Rs.5000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rooms1-single">
+            <div class="rooms1-img"><img src="images/uc3.png" alt="" /></div>
+            <div class="rooms1-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="rooms1-title"><a href="#">Double Room</a></div>
+                  <div class="rooms1-tagline">
+                    50 m<sup>2</sup> / 2 adults 1 children
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="book">
+                    <div>
+                      <a href="room-details.html" class="butn-dark2"
+                        ><span>Book</span></a
+                      >
+                    </div>
+                    <div>
+                      <span>from</span><span class="price">Rs. 7000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rooms1-single">
+            <div class="rooms1-img"><img src="images/uc3.png" alt="" /></div>
+            <div class="rooms1-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="rooms1-title"><a href="#">Master Room</a></div>
+                  <div class="rooms1-tagline">
+                    60 m<sup>2</sup> / 2 adults 2 children
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="book">
+                    <div>
+                      <a href="room-details.html" class="butn-dark2"
+                        ><span>Book</span></a
+                      >
+                    </div>
+                    <div>
+                      <span>from</span><span class="price">Rs. 8000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rooms1-single">
+            <div class="rooms1-img"><img src="images/uc3.png" alt="" /></div>
+            <div class="rooms1-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="rooms1-title"><a href="#">family Room</a></div>
+                  <div class="rooms1-tagline">
+                    65 m<sup>2</sup> / 2 adults 3 children
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="book">
+                    <div>
+                      <a href="room-details.html" class="butn-dark2"
+                        ><span>Book</span></a
+                      >
+                    </div>
+                    <div>
+                      <span>from</span><span class="price">Rs 8500</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Promo Video -->
+    <section
+      class="video-wrapper video section-padding bg-img bg-fixed"
+      data-overlay-dark="5"
+      data-background="images/uc1.png"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 text-center">
+            <span
+              ><i class="star-rating"></i><i class="star-rating"></i
+              ><i class="star-rating"></i><i class="star-rating"></i
+              ><i class="star-rating"></i
+            ></span>
+            <div class="section-subtitle">
+              <span>Rimadi Lake Guest INN</span>
+            </div>
+            <div class="section-title">
+              <span>Hotel Promotional Video</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center col-md-12">
+            <a
+              class="vid"
+              href="https://youtu.be/Jp0AKM99zes?si=OMUAkuGy3EMSCvfe"
+            >
+              <div class="vid-butn">
+                <span class="icon">
+                  <i class="ti-control-play"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Amenities -->
+    <section class="amenities section-padding">
+      <div class="container">
+        <div class="row mb-30">
+          <div class="col-md-3">
+            <div class="sub-title border-bot-light">Our Services</div>
+          </div>
+          <div class="col-md-9">
+            <div class="section-title">We are providing you</div>
+            <p>
+              Services at the inn include parking, WiFi, tuk-tuk rides, room
+              service, breakfast, and expert tourist guidance.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <span class="number">01</span>
+                <div class="icon"><i class="flaticon-car"></i></div>
+                <h5><a href="#">Parking Space</a></h5>
+                <p>Ample space for guests' vehicles, ensuring convenience.</p>
+              </div>
+              <div class="item">
+                <span class="number">02</span>
+                <div class="icon"><i class="flaticon-bed"></i></div>
+                <h5><a href="#">Room Service</a></h5>
+                <p>Attentive assistance for in-room needs during the stay.</p>
+              </div>
+              <div class="item">
+                <span class="number">03</span>
+                <div class="icon"><i class="flaticon-world"></i></div>
+                <h5><a href="#">Tourist guidance</a></h5>
+                <p>
+                  Expert advice for exploring nearby attractions and
+                  destinations.
+                </p>
+              </div>
+              <div class="item">
+                <span class="number">04</span>
+                <div class="icon"><i class="flaticon-wifi"></i></div>
+                <h5><a href="#">WiF Internet</a></h5>
+                <p>
+                  Seamless internet access for staying connected during the
+                  stay.
+                </p>
+              </div>
+              <div class="item">
+                <span class="number">05</span>
+                <div class="icon"><i class="flaticon-breakfast"></i></div>
+                <h5><a href="#">Breakfast</a></h5>
+                <p>Delicious morning meals to start the day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testiominals -->
+    <section class="testimonials">
+      <div
+        class="background bg-img bg-fixed section-padding pb-0"
+        data-background="images/uc1.png"
+        data-overlay-dark="4"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="sub-title border-bot-dark">Testiominals</h3>
+            </div>
+            <div class="col-md-8">
+              <div class="section-title whte">What Client's Say?</div>
+              <div class="testimonials-box">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <span>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                    </span>
+                    <h5>
+                      "Customer Review 01 - Here we will have review from
+                      customer"
+                    </h5>
+                    <div class="info">
+                      <div class="author-img">
+                        <img src="images/uc2.png" alt="" />
+                      </div>
+                      <div class="cont">
+                        <h6>Customer 01</h6>
+                        <span>Customer Review</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <span>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                      <i class="star-rating"></i>
+                    </span>
+                    <h5>
+                      "Customer Review 02 - Here we will have review from
+                      customer"
+                    </h5>
+                    <div class="info">
+                      <div class="author-img">
+                        <img src="images/uc2.png" alt="" />
+                      </div>
+                      <div class="cont">
+                        <h6>Customer 02</h6>
+                        <span>Customer Review</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="services section-padding">
+      <div class="container">
+        <div class="row mb-30">
+          <div class="col-md-3">
+            <div class="sub-title border-bot-light">Discover</div>
+          </div>
+          <div class="col-md-9">
+            <div class="section-title">Tourist Places near us</div>
+            <p>
+              In Batticaloa, Sri Lanka, notable tourist spots include Kallady
+              Bridge, Batticaloa Fort, Pasikudah Beach, and the picturesque
+              lagoons like Batticaloa Lagoon and Eravur Lagoon, offering serene
+              settings for relaxation and exploration.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="item">
+              <div class="item-wrap">
+                <div class="img"><img src="images/tPlaces/1.png" alt="" /></div>
+                <div class="con">
+                  <div class="title-box">
+                    <h3><a href="#">Lagoon and Eravur</a></h3>
+                  </div>
+                  <div class="arrow">
+                    <a href="#"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <div class="item-wrap">
+                <div class="img"><img src="images/tPlaces/2.png" alt="" /></div>
+                <div class="con">
+                  <div class="title-box">
+                    <h3><a href="#">Pasikuda Beach</a></h3>
+                  </div>
+                  <div class="arrow">
+                    <a href="#"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <div class="item-wrap">
+                <div class="img"><img src="images/tPlaces/3.png" alt="" /></div>
+                <div class="con">
+                  <div class="title-box">
+                    <h3><a href="#">Batticaloa Fort</a></h3>
+                  </div>
+                  <div class="arrow">
+                    <a href="#"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Search -->
+    <section
+      class="section-padding bg-img bg-fixed"
+      data-overlay-dark="3"
+      data-background="images/uc1.png"
+    >
+      <div class="container">
+        <div class="booking-inner clearfix">
+          <form action="#" class="form1 clearfix">
+            <div class="col1 c1">
+              <div class="input1_wrapper border-l border-b border-t border-r">
+                <label>Check in</label>
+                <div class="input1_inner">
+                  <input
+                    type="text"
+                    class="form-control input datepicker"
+                    placeholder="Check in"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col1 c2">
+              <div class="input1_wrapper border-l border-b border-t border-r">
+                <label>Check out</label>
+                <div class="input1_inner">
+                  <input
+                    type="text"
+                    class="form-control input datepicker"
+                    placeholder="Check out"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col2 c3">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Adults</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col2 c4">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Children</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col2 c5">
+              <div class="select1_wrapper border-l border-b border-t border-r">
+                <label>Rooms</label>
+                <div class="select1_inner">
+                  <select class="select2 select" style="width: 100%">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col3 c6">
+              <button type="submit" class="btn-form1-submit">Check Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Home -->
+    <section class="blog-home section-padding">
+      <div class="container">
+        <div class="row mb-30">
+          <div class="col-md-3">
+            <div class="sub-title border-bot-light">Our Blog</div>
+          </div>
+          <div class="col-md-9">
+            <div class="section-title">Latest News</div>
+            <p>
+              Delve into our narrative at Rimadi Lake Guest INN, discovering our
+              journey, commitment to hospitality, and our vision for your
+              exceptional stay.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item bg-img" data-background="images/uc2.png">
+                <div class="content">
+                  <div class="info">
+                    <a href="blog.html">
+                      <span
+                        ><i class="ti-time" aria-hidden="true"></i>28 Dec
+                        2024</span
+                      ></a
+                    >
+                  </div>
+                  <a href="post.html">
+                    <h5>Grand Opening Soon: Your Gateway to Tranquility</h5>
+                  </a>
+                  <p>
+                    Rimadi Lake Guest INN's serene grand opening, a haven in
+                    Eravur Town, invites you to experience ultimate tranquility.
+                  </p>
+                  <div class="arrow">
+                    <a href="post.html"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-img" data-background="images/uc2.png">
+                <div class="content">
+                  <div class="info">
+                    <a href="blog.html">
+                      <span
+                        ><i class="ti-time" aria-hidden="true"></i>26 Dec
+                        2024</span
+                      ></a
+                    >
+                  </div>
+                  <a href="post.html">
+                    <h5>Discover Our Diverse Rooms and Impeccable Services</h5>
+                  </a>
+                  <p>
+                    Explore our varied rooms, from singles to family suites, and
+                    enjoy exceptional services for a delightful stay.
+                  </p>
+                  <div class="arrow">
+                    <a href="post.html"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-img" data-background="images/uc2.png">
+                <div class="content">
+                  <div class="info">
+                    <a href="blog.html">
+                      <span
+                        ><i class="ti-time" aria-hidden="true"></i>24 Dec
+                        2024</span
+                      ></a
+                    >
+                  </div>
+                  <a href="post.html">
+                    <h5>
+                      Embrace Nature's Splendor: Exploring the Surroundings
+                    </h5>
+                  </a>
+                  <p>
+                    Surround yourself with beauty. Eravur Lagoon and Lagoon Park
+                    beckon, promising a serene stay amid picturesque landscapes.
+                  </p>
+                  <div class="arrow">
+                    <a href="post.html"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-img" data-background="images/uc2.png">
+                <div class="content">
+                  <div class="info">
+                    <a href="blog.html">
+                      <span
+                        ><i class="ti-time" aria-hidden="true"></i>20 Dec
+                        2024</span
+                      ></a
+                    >
+                  </div>
+                  <a href="post.html">
+                    <h5>
+                      Unveiling Culinary Delights: Indulge in Our Delectable
+                      Dining Experience
+                    </h5>
+                  </a>
+                  <p>
+                    Savor exquisite flavors at Rimadi Lake Guest INN, where
+                    delectable cuisine meets a memorable dining journey for
+                    every guest's palate.
+                  </p>
+                  <div class="arrow">
+                    <a href="post.html"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="item bg-img" data-background="images/uc2.png">
+                <div class="content">
+                  <div class="info">
+                    <a href="blog.html">
+                      <span
+                        ><i class="ti-time" aria-hidden="true"></i>18 Dec
+                        2024</span
+                      ></a
+                    >
+                  </div>
+                  <a href="post.html">
+                    <h5>
+                      Adventure Beckons: Exciting Local Activities Await Your
+                      Stay
+                    </h5>
+                  </a>
+                  <p>
+                    Dive into local adventures! Explore thrilling activities
+                    around Eravur Town, adding excitement to your stay at our
+                    serene inn.
+                  </p>
+                  <div class="arrow">
+                    <a href="post.html"><span class="ti-arrow-right"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mb-30">
+              <div class="sub-title border-footer-light whte">Contact Us!</div>
+            </div>
+            <div class="col-md-4 offset-md-1">
+              <div class="item">
+                <h3>Get in touch</h3>
+                <p>Lagoon Road, Eravur.</p>
+                <p class="phone">+94 652 240 410</p>
+                <p class="mail">info@rimadilake.com</p>
+                <div class="social mt-2">
+                  <a href="index.html"><i class="ti-facebook"></i></a>
+                  <a href="index.html"><i class="ti-instagram"></i></a>
+                  <a href="index.html"><i class="ti-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="item">
+                <h3>Rooms & Suites</h3>
+                <ul class="footer-explore-list list-unstyled">
+                  <li><a href="rooms.html">Single Room</a></li>
+                  <li><a href="rooms.html">Double Room</a></li>
+                  <li><a href="rooms.html">Master Room</a></li>
+                  <li><a href="rooms.html">Family Room</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <p>© 2024 Rimadi Lake - Guest INN. All right reserved.</p>
+            </div>
+            <div class="col-lg-8 col-md-6">
+              <p class="right"><a href="#">Terms &amp; Conditions</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/vegas.slider.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Vegas Background Slideshow (vegas.slider kenburns) -->
+    <script>
+      $(document).ready(function () {
+        $("#kenburnsSliderContainer").vegas({
+          slides: [
+            {
+              src: "images/uc1.png",
+            },
+            {
+              src: "images/uc1.png",
+            },
+            {
+              src: "images/uc1.png",
+            },
+            {
+              src: "images/uc1.png",
+            },
+          ],
+          overlay: true,
+          transition: "fade2",
+          animation: "kenburnsUpRight",
+          transitionDuration: 1000,
+          delay: 10000,
+          animationDuration: 20000,
+        });
+      });
+    </script>
+  </body>
+</html>
